@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.4.7">
+  <compound refid="classrapidxml_1_1memory__pool" kind="class"><name>rapidxml::memory_pool</name>
+    <member refid="classrapidxml_1_1memory__pool_f8fb3c8f1a564f8045c40bcd07a89866_1f8fb3c8f1a564f8045c40bcd07a89866" kind="function"><name>memory_pool</name></member>
+    <member refid="classrapidxml_1_1memory__pool_6f8c7990d9ec1ed2acf6558b238570eb_16f8c7990d9ec1ed2acf6558b238570eb" kind="function"><name>~memory_pool</name></member>
+    <member refid="classrapidxml_1_1memory__pool_750ba3c610b129ac057d817509d08f41_1750ba3c610b129ac057d817509d08f41" kind="function"><name>allocate_node</name></member>
+    <member refid="classrapidxml_1_1memory__pool_462de142669e0ff649e8e615b82bf457_1462de142669e0ff649e8e615b82bf457" kind="function"><name>allocate_attribute</name></member>
+    <member refid="classrapidxml_1_1memory__pool_69729185bc59b0875192d667c47b8859_169729185bc59b0875192d667c47b8859" kind="function"><name>allocate_string</name></member>
+    <member refid="classrapidxml_1_1memory__pool_95c49fcb056e9103ec906a59e3e01d76_195c49fcb056e9103ec906a59e3e01d76" kind="function"><name>clone_node</name></member>
+    <member refid="classrapidxml_1_1memory__pool_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204" kind="function"><name>clear</name></member>
+    <member refid="classrapidxml_1_1memory__pool_c0a55a6ef0837dca67572e357100d78a_1c0a55a6ef0837dca67572e357100d78a" kind="function"><name>set_allocator</name></member>
+    <member refid="classrapidxml_1_1memory__pool_152fc3d8e2739ea2b71b21dc59f6de3a_1152fc3d8e2739ea2b71b21dc59f6de3a" kind="function"><name>allocate_memory</name></member>
+    <member refid="classrapidxml_1_1memory__pool_52d6e76e84e0a2c623b332688b6ee578_152d6e76e84e0a2c623b332688b6ee578" kind="variable"><name>m_block</name></member>
+    <member refid="classrapidxml_1_1memory__pool_338287d0a1c89d037708af4ff6d46a99_1338287d0a1c89d037708af4ff6d46a99" kind="variable"><name>m_size</name></member>
+    <member refid="classrapidxml_1_1memory__pool_8104421a517bca131cf1c833f2bc059a_18104421a517bca131cf1c833f2bc059a" kind="variable"><name>m_static_block</name></member>
+    <member refid="classrapidxml_1_1memory__pool_aa4ba307ad96ed39acff69d49380023b_1aa4ba307ad96ed39acff69d49380023b" kind="variable"><name>m_alloc_func</name></member>
+    <member refid="classrapidxml_1_1memory__pool_5c24ed09a3bb3b3f534b3473c6b9e929_15c24ed09a3bb3b3f534b3473c6b9e929" kind="variable"><name>m_free_func</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1memory__pool_1_1block" kind="struct"><name>rapidxml::memory_pool::block</name>
+    <member refid="structrapidxml_1_1memory__pool_1_1block_d1dc0f1a5752b0b3907ef7057bd45739_1d1dc0f1a5752b0b3907ef7057bd45739" kind="function"><name>block</name></member>
+    <member refid="structrapidxml_1_1memory__pool_1_1block_81d0c1f89e2669ae5327e00a02d713e1_181d0c1f89e2669ae5327e00a02d713e1" kind="variable"><name>previous_block</name></member>
+    <member refid="structrapidxml_1_1memory__pool_1_1block_c7fe156021645322f9fccaec37e5a864_1c7fe156021645322f9fccaec37e5a864" kind="variable"><name>pointer</name></member>
+    <member refid="structrapidxml_1_1memory__pool_1_1block_9e7303e4e719b1c7e4accbfd2666f20f_19e7303e4e719b1c7e4accbfd2666f20f" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="classrapidxml_1_1parse__error" kind="class"><name>rapidxml::parse_error</name>
+    <member refid="classrapidxml_1_1parse__error_4dd8d1bdbd9221df4dcb90cafaee3332_14dd8d1bdbd9221df4dcb90cafaee3332" kind="function"><name>parse_error</name></member>
+    <member refid="classrapidxml_1_1parse__error_ff06f49065b54a8a86e02e9a2441a8ba_1ff06f49065b54a8a86e02e9a2441a8ba" kind="function"><name>what</name></member>
+    <member refid="classrapidxml_1_1parse__error_377be7d201d95221c318682c35377aca_1377be7d201d95221c318682c35377aca" kind="function"><name>where</name></member>
+    <member refid="classrapidxml_1_1parse__error_a42b59d0ffbe66db0bf1c3db6e46c7ff_1a42b59d0ffbe66db0bf1c3db6e46c7ff" kind="variable"><name>m_what</name></member>
+    <member refid="classrapidxml_1_1parse__error_2e9aace9471e00fe021c84672467de93_12e9aace9471e00fe021c84672467de93" kind="variable"><name>m_where</name></member>
+  </compound>
+  <compound refid="classrapidxml_1_1xml__attribute" kind="class"><name>rapidxml::xml_attribute</name>
+    <member refid="classrapidxml_1_1xml__attribute_d5464aadf08269a886b730993525db34_1d5464aadf08269a886b730993525db34" kind="function"><name>xml_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__attribute_77aea7d8d996ba4f6bd61cc478a4e72d_177aea7d8d996ba4f6bd61cc478a4e72d" kind="function"><name>document</name></member>
+    <member refid="classrapidxml_1_1xml__attribute_5c4a98d2b75f9b41b12c110108fd55ab_15c4a98d2b75f9b41b12c110108fd55ab" kind="function"><name>previous_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__attribute_1b8a814d0d3a7165396b08433eee8a91_11b8a814d0d3a7165396b08433eee8a91" kind="function"><name>next_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__attribute_d95cab11b952099a02fbf1b70e5fa71f_1d95cab11b952099a02fbf1b70e5fa71f" kind="variable"><name>m_prev_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__attribute_707f986e627769458a6497a8e7861ad3_1707f986e627769458a6497a8e7861ad3" kind="variable"><name>m_next_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__attribute_a7e464ce3fe512598ff8dda47291941f_1a7e464ce3fe512598ff8dda47291941f" kind="friend"><name>xml_node&lt; Ch &gt;</name></member>
+  </compound>
+  <compound refid="classrapidxml_1_1xml__base" kind="class"><name>rapidxml::xml_base</name>
+    <member refid="classrapidxml_1_1xml__base_23630d2c130a9e0e3f3afa7584a9b218_123630d2c130a9e0e3f3afa7584a9b218" kind="function"><name>xml_base</name></member>
+    <member refid="classrapidxml_1_1xml__base_622eade29fdf7806d3ef93ac4d90e707_1622eade29fdf7806d3ef93ac4d90e707" kind="function"><name>name</name></member>
+    <member refid="classrapidxml_1_1xml__base_0dae694c8f7e4d89f1003e2f3a15a43c_10dae694c8f7e4d89f1003e2f3a15a43c" kind="function"><name>name_size</name></member>
+    <member refid="classrapidxml_1_1xml__base_c54fa4987fb503916a7b541eb15c9c7f_1c54fa4987fb503916a7b541eb15c9c7f" kind="function"><name>value</name></member>
+    <member refid="classrapidxml_1_1xml__base_aed5ae791b7164c1ee5e649198cbb3db_1aed5ae791b7164c1ee5e649198cbb3db" kind="function"><name>value_size</name></member>
+    <member refid="classrapidxml_1_1xml__base_4e7e23d06d48126c65b1f6266acfba5c_14e7e23d06d48126c65b1f6266acfba5c" kind="function"><name>name</name></member>
+    <member refid="classrapidxml_1_1xml__base_e099c291e104a0d277307fe71f5e0f9e_1e099c291e104a0d277307fe71f5e0f9e" kind="function"><name>name</name></member>
+    <member refid="classrapidxml_1_1xml__base_d9640aa3f5374673cb72a5289b6c91eb_1d9640aa3f5374673cb72a5289b6c91eb" kind="function"><name>value</name></member>
+    <member refid="classrapidxml_1_1xml__base_18c7469acdca771de9b4f3054053029c_118c7469acdca771de9b4f3054053029c" kind="function"><name>value</name></member>
+    <member refid="classrapidxml_1_1xml__base_798e8df7ea53ade4d9f0701017dce80e_1798e8df7ea53ade4d9f0701017dce80e" kind="function"><name>parent</name></member>
+    <member refid="classrapidxml_1_1xml__base_23053aafada985ece680d52694c63cdc_123053aafada985ece680d52694c63cdc" kind="variable"><name>m_name</name></member>
+    <member refid="classrapidxml_1_1xml__base_8fbc9ba6b320f64f4bdab09469a9e623_18fbc9ba6b320f64f4bdab09469a9e623" kind="variable"><name>m_value</name></member>
+    <member refid="classrapidxml_1_1xml__base_f67d7df13abd2eb30036a801b87d6f81_1f67d7df13abd2eb30036a801b87d6f81" kind="variable"><name>m_name_size</name></member>
+    <member refid="classrapidxml_1_1xml__base_643295fc68623ed58e2db3551d44fef0_1643295fc68623ed58e2db3551d44fef0" kind="variable"><name>m_value_size</name></member>
+    <member refid="classrapidxml_1_1xml__base_1b2fdbb90cc0cc9135a8311c40d79bf9_11b2fdbb90cc0cc9135a8311c40d79bf9" kind="variable"><name>m_parent</name></member>
+    <member refid="classrapidxml_1_1xml__base_641d0b8df8e0c3c7e0db06ced0e0749f_1641d0b8df8e0c3c7e0db06ced0e0749f" kind="function"><name>nullstr</name></member>
+  </compound>
+  <compound refid="classrapidxml_1_1xml__document" kind="class"><name>rapidxml::xml_document</name>
+    <member refid="classrapidxml_1_1xml__document_6ce266cc52d549c42abe3a3d5e8af9ba_16ce266cc52d549c42abe3a3d5e8af9ba" kind="function"><name>xml_document</name></member>
+    <member refid="classrapidxml_1_1xml__document_8338ce6042e7b04d5a42144fb446b69c_18338ce6042e7b04d5a42144fb446b69c" kind="function"><name>parse</name></member>
+    <member refid="classrapidxml_1_1xml__document_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204" kind="function"><name>clear</name></member>
+    <member refid="classrapidxml_1_1xml__document_1b5b0353122a14a16660b611e5909912_11b5b0353122a14a16660b611e5909912" kind="function"><name>parse_bom</name></member>
+    <member refid="classrapidxml_1_1xml__document_7b959ac2dc04514ba680b723ebc7e337_17b959ac2dc04514ba680b723ebc7e337" kind="function"><name>parse_xml_declaration</name></member>
+    <member refid="classrapidxml_1_1xml__document_72dc55f7fea64d137b748a92a098781d_172dc55f7fea64d137b748a92a098781d" kind="function"><name>parse_comment</name></member>
+    <member refid="classrapidxml_1_1xml__document_ffddfb46a1a8d6f3d49fbb033083556f_1ffddfb46a1a8d6f3d49fbb033083556f" kind="function"><name>parse_doctype</name></member>
+    <member refid="classrapidxml_1_1xml__document_2b9dd9234af9d0b34716476ebf7e4c6e_12b9dd9234af9d0b34716476ebf7e4c6e" kind="function"><name>parse_pi</name></member>
+    <member refid="classrapidxml_1_1xml__document_220484fbe168967209603fecf86a090a_1220484fbe168967209603fecf86a090a" kind="function"><name>parse_and_append_data</name></member>
+    <member refid="classrapidxml_1_1xml__document_9b059a15ba83f136665288116a2781ab_19b059a15ba83f136665288116a2781ab" kind="function"><name>parse_cdata</name></member>
+    <member refid="classrapidxml_1_1xml__document_d1db8d717f67ed24832a9f4dd49cac3d_1d1db8d717f67ed24832a9f4dd49cac3d" kind="function"><name>parse_element</name></member>
+    <member refid="classrapidxml_1_1xml__document_27b6814c37008846c8a59acb9e2650ef_127b6814c37008846c8a59acb9e2650ef" kind="function"><name>parse_node</name></member>
+    <member refid="classrapidxml_1_1xml__document_52355d670f937d4ff832d638cdb980f9_152355d670f937d4ff832d638cdb980f9" kind="function"><name>parse_node_contents</name></member>
+    <member refid="classrapidxml_1_1xml__document_fff18f6ae9975f62fc415fc4193feefb_1fff18f6ae9975f62fc415fc4193feefb" kind="function"><name>parse_node_attributes</name></member>
+    <member refid="classrapidxml_1_1xml__document_05fe93948ce17d89155b05ca82cc5c87_105fe93948ce17d89155b05ca82cc5c87" kind="function"><name>insert_coded_character</name></member>
+    <member refid="classrapidxml_1_1xml__document_0c5e12f8c5dae82ee3d4f28f23a33ee9_10c5e12f8c5dae82ee3d4f28f23a33ee9" kind="function"><name>skip</name></member>
+    <member refid="classrapidxml_1_1xml__document_99390498773a249806ef3c8454765ebc_199390498773a249806ef3c8454765ebc" kind="function"><name>skip_and_expand_character_refs</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1attribute__name__pred" kind="struct"><name>rapidxml::xml_document::attribute_name_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1attribute__name__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1attribute__value__pred" kind="struct"><name>rapidxml::xml_document::attribute_value_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1attribute__value__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1attribute__value__pure__pred" kind="struct"><name>rapidxml::xml_document::attribute_value_pure_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1attribute__value__pure__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1node__name__pred" kind="struct"><name>rapidxml::xml_document::node_name_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1node__name__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1text__pred" kind="struct"><name>rapidxml::xml_document::text_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1text__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1text__pure__no__ws__pred" kind="struct"><name>rapidxml::xml_document::text_pure_no_ws_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1text__pure__no__ws__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1text__pure__with__ws__pred" kind="struct"><name>rapidxml::xml_document::text_pure_with_ws_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1text__pure__with__ws__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="structrapidxml_1_1xml__document_1_1whitespace__pred" kind="struct"><name>rapidxml::xml_document::whitespace_pred</name>
+    <member refid="structrapidxml_1_1xml__document_1_1whitespace__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="classrapidxml_1_1xml__node" kind="class"><name>rapidxml::xml_node</name>
+    <member refid="classrapidxml_1_1xml__node_34c55af3504549a475e5b9dfcaa6adf5_134c55af3504549a475e5b9dfcaa6adf5" kind="function"><name>xml_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_975e86937621ae4afe6a423219de30d0_1975e86937621ae4afe6a423219de30d0" kind="function"><name>type</name></member>
+    <member refid="classrapidxml_1_1xml__node_77aea7d8d996ba4f6bd61cc478a4e72d_177aea7d8d996ba4f6bd61cc478a4e72d" kind="function"><name>document</name></member>
+    <member refid="classrapidxml_1_1xml__node_7823e36687669e59c2afdf66334ef35a_17823e36687669e59c2afdf66334ef35a" kind="function"><name>first_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_fcb6e2209b591a36d2dadba20d2bc7cc_1fcb6e2209b591a36d2dadba20d2bc7cc" kind="function"><name>last_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_ac2f6886c0107e9d5f156e9542546df6_1ac2f6886c0107e9d5f156e9542546df6" kind="function"><name>previous_sibling</name></member>
+    <member refid="classrapidxml_1_1xml__node_b3ead2cefecc03a813836203e3f6f38f_1b3ead2cefecc03a813836203e3f6f38f" kind="function"><name>next_sibling</name></member>
+    <member refid="classrapidxml_1_1xml__node_5810a09f82f8d53efbe9456286dcec83_15810a09f82f8d53efbe9456286dcec83" kind="function"><name>first_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_16953d66751b5b949ee4ee2d9c0bc63a_116953d66751b5b949ee4ee2d9c0bc63a" kind="function"><name>last_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_a78759bfa429fa2ab6bc5fe617cfa3cf_1a78759bfa429fa2ab6bc5fe617cfa3cf" kind="function"><name>type</name></member>
+    <member refid="classrapidxml_1_1xml__node_0c39df6617e709eb2fba11300dea63f2_10c39df6617e709eb2fba11300dea63f2" kind="function"><name>prepend_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_86de2e22276826089b7baed2599f8dee_186de2e22276826089b7baed2599f8dee" kind="function"><name>append_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_780972a57fc447250ab47cc8f421b65e_1780972a57fc447250ab47cc8f421b65e" kind="function"><name>insert_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_9a31d861e1bddc710839c551a5d2b3a4_19a31d861e1bddc710839c551a5d2b3a4" kind="function"><name>remove_first_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_87addf2bc127ee31aa4b5295d3c9b530_187addf2bc127ee31aa4b5295d3c9b530" kind="function"><name>remove_last_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_9316463a2201631e7e2062b17729f9cd_19316463a2201631e7e2062b17729f9cd" kind="function"><name>remove_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_0218147d13e41d5fa60ced4e7a7e9726_10218147d13e41d5fa60ced4e7a7e9726" kind="function"><name>remove_all_nodes</name></member>
+    <member refid="classrapidxml_1_1xml__node_f6dffa513da74cc0be71a7ba84f8265e_1f6dffa513da74cc0be71a7ba84f8265e" kind="function"><name>prepend_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_8fbd4f5ef7169d493da9f8d87ac04b77_18fbd4f5ef7169d493da9f8d87ac04b77" kind="function"><name>append_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_070d5888b0557fe06a5b24961de1b988_1070d5888b0557fe06a5b24961de1b988" kind="function"><name>insert_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_4eea4a7f6cb484ca9944f7eafe6e1843_14eea4a7f6cb484ca9944f7eafe6e1843" kind="function"><name>remove_first_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_37d87c4d5d89fa0cf05b72ee8d4cba3b_137d87c4d5d89fa0cf05b72ee8d4cba3b" kind="function"><name>remove_last_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_c75154db2e768c0e5b541fc8cd0775ab_1c75154db2e768c0e5b541fc8cd0775ab" kind="function"><name>remove_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_59e6ad4cfd5e8096c052e71d79561eda_159e6ad4cfd5e8096c052e71d79561eda" kind="function"><name>remove_all_attributes</name></member>
+    <member refid="classrapidxml_1_1xml__node_ec0647357c384cfeceb20abde1fc35c5_1ec0647357c384cfeceb20abde1fc35c5" kind="function"><name>xml_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_a0f61e3d0438a2d2e5dd3672e8ad84e9_1a0f61e3d0438a2d2e5dd3672e8ad84e9" kind="function"><name>operator=</name></member>
+    <member refid="classrapidxml_1_1xml__node_62386a9aac750fcd7705fde78adcf352_162386a9aac750fcd7705fde78adcf352" kind="variable"><name>m_type</name></member>
+    <member refid="classrapidxml_1_1xml__node_dfbb48e4fba8d7b256fb0610d550b657_1dfbb48e4fba8d7b256fb0610d550b657" kind="variable"><name>m_first_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_943e1a199d1b837a074e439ea02d35e9_1943e1a199d1b837a074e439ea02d35e9" kind="variable"><name>m_last_node</name></member>
+    <member refid="classrapidxml_1_1xml__node_8a8a64135bcce1c64f14eb59fccc4bc3_18a8a64135bcce1c64f14eb59fccc4bc3" kind="variable"><name>m_first_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_09592a37dd2c90b8f1ae126b39d764fb_109592a37dd2c90b8f1ae126b39d764fb" kind="variable"><name>m_last_attribute</name></member>
+    <member refid="classrapidxml_1_1xml__node_dadc9c77431484fb94058e8c8eea962c_1dadc9c77431484fb94058e8c8eea962c" kind="variable"><name>m_prev_sibling</name></member>
+    <member refid="classrapidxml_1_1xml__node_c5a1aefc4bc26b7223df120e672f56c3_1c5a1aefc4bc26b7223df120e672f56c3" kind="variable"><name>m_next_sibling</name></member>
+  </compound>
+  <compound refid="namespacerapidxml" kind="namespace"><name>rapidxml</name>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682" kind="enum"><name>node_type</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556820727d72be650e2fb7662beec8e92623a" kind="enumvalue"><name>node_document</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682a0f3570940dc9ef54a2c4102d7cf81ab" kind="enumvalue"><name>node_element</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556826941a6ead3f133ae750be3d0b9e0ed5d" kind="enumvalue"><name>node_data</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556823a51c199de37009778e9e34f817d7093" kind="enumvalue"><name>node_cdata</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682a31101aa86d3d2789f3cb0ec05124789" kind="enumvalue"><name>node_comment</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682f64b60b7717e635114f2c46235f35092" kind="enumvalue"><name>node_declaration</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682929a6006793b96799613e38f2b382055" kind="enumvalue"><name>node_doctype</name></member>
+    <member refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556821b24363265b5e278ca1e16f390818fae" kind="enumvalue"><name>node_pi</name></member>
+    <member refid="namespacerapidxml_ff5d67f74437199d316d2b2660653ae1_1ff5d67f74437199d316d2b2660653ae1" kind="function"><name>parse_error_handler</name></member>
+    <member refid="namespacerapidxml_87e8bbab53702cf3b438bd553c10b6b9_187e8bbab53702cf3b438bd553c10b6b9" kind="variable"><name>parse_no_data_nodes</name></member>
+    <member refid="namespacerapidxml_97e2c4fdc04fae17126f9971a4fc993e_197e2c4fdc04fae17126f9971a4fc993e" kind="variable"><name>parse_no_element_values</name></member>
+    <member refid="namespacerapidxml_9cae3801e70437cbc410c24bf6be691c_19cae3801e70437cbc410c24bf6be691c" kind="variable"><name>parse_no_string_terminators</name></member>
+    <member refid="namespacerapidxml_7223b7815c4fb8b42e6e4e77e1ea6b97_17223b7815c4fb8b42e6e4e77e1ea6b97" kind="variable"><name>parse_no_entity_translation</name></member>
+    <member refid="namespacerapidxml_ccde57f6054857ee4042a1b4d98c83b9_1ccde57f6054857ee4042a1b4d98c83b9" kind="variable"><name>parse_no_utf8</name></member>
+    <member refid="namespacerapidxml_52e2c934ad9c845a5f4cc49570470556_152e2c934ad9c845a5f4cc49570470556" kind="variable"><name>parse_declaration_node</name></member>
+    <member refid="namespacerapidxml_0f7479dacbc868456d07897a8c072784_10f7479dacbc868456d07897a8c072784" kind="variable"><name>parse_comment_nodes</name></member>
+    <member refid="namespacerapidxml_8e187746ba1ca04f107951ad32df962e_18e187746ba1ca04f107951ad32df962e" kind="variable"><name>parse_doctype_node</name></member>
+    <member refid="namespacerapidxml_1c20b2b2b75711cd76423e119c49f830_11c20b2b2b75711cd76423e119c49f830" kind="variable"><name>parse_pi_nodes</name></member>
+    <member refid="namespacerapidxml_a5daff9d61c7d4eaf98e4d42efe628ee_1a5daff9d61c7d4eaf98e4d42efe628ee" kind="variable"><name>parse_validate_closing_tags</name></member>
+    <member refid="namespacerapidxml_ac1f06b1afd47b812732fb521b146fd9_1ac1f06b1afd47b812732fb521b146fd9" kind="variable"><name>parse_trim_whitespace</name></member>
+    <member refid="namespacerapidxml_88f95d4e275ba01408fefde83078651b_188f95d4e275ba01408fefde83078651b" kind="variable"><name>parse_normalize_whitespace</name></member>
+    <member refid="namespacerapidxml_45751cf2f38fd6915f35b3122b46d5b6_145751cf2f38fd6915f35b3122b46d5b6" kind="variable"><name>parse_default</name></member>
+    <member refid="namespacerapidxml_a97ba1a0a79a6d66f4eef3612508d943_1a97ba1a0a79a6d66f4eef3612508d943" kind="variable"><name>parse_non_destructive</name></member>
+    <member refid="namespacerapidxml_398c5476e76102f8bd76c10bb0abbe10_1398c5476e76102f8bd76c10bb0abbe10" kind="variable"><name>parse_fastest</name></member>
+    <member refid="namespacerapidxml_b4f2515265facb42291570307924bd57_1b4f2515265facb42291570307924bd57" kind="variable"><name>parse_full</name></member>
+  </compound>
+  <compound refid="manual-for-doxygen_8hpp" kind="file"><name>manual-for-doxygen.hpp</name>
+  </compound>
+  <compound refid="rapidxml_8hpp" kind="file"><name>rapidxml.hpp</name>
+  </compound>
+</doxygenindex>

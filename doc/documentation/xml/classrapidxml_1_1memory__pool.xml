@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.7">
+  <compounddef id="classrapidxml_1_1memory__pool" kind="class" prot="public">
+    <compoundname>rapidxml::memory_pool</compoundname>
+    <derivedcompoundref refid="classrapidxml_1_1xml__document" prot="public" virt="non-virtual">xml_document</derivedcompoundref>
+    <includes refid="rapidxml_8hpp" local="no">rapidxml.hpp</includes>
+    <innerclass refid="structrapidxml_1_1memory__pool_1_1block" prot="private">rapidxml::memory_pool::block</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>Ch</declname>
+        <defname>Ch</defname>
+        <defval>char</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_f8fb3c8f1a564f8045c40bcd07a89866_1f8fb3c8f1a564f8045c40bcd07a89866" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>memory_pool</definition>
+        <argsstring>()</argsstring>
+        <name>memory_pool</name>
+        <briefdescription>
+<para>Constructs empty pool with default allocator functions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="353" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="347" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_6f8c7990d9ec1ed2acf6558b238570eb_16f8c7990d9ec1ed2acf6558b238570eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~memory_pool</definition>
+        <argsstring>()</argsstring>
+        <name>~memory_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys pool and frees all the memory. This causes memory occupied by nodes allocated by the pool to be freed. Nodes allocated from the pool are no longer valid. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="360" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="359" bodyend="362"/>
+        <references refid="classrapidxml_1_1memory__pool_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204" compoundref="rapidxml_8hpp" startline="484" endline="496">memory_pool::clear</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_750ba3c610b129ac057d817509d08f41_1750ba3c610b129ac057d817509d08f41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* allocate_node</definition>
+        <argsstring>(node_type type, const Ch *name=0, const Ch *value=0, std::size_t name_size=0, std::size_t value_size=0)</argsstring>
+        <name>allocate_node</name>
+        <param>
+          <type><ref refid="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682" kindref="member">node_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const Ch *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const Ch *</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>name_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>value_size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a new node from the pool, and optionally assigns name and value to it. If the allocation request cannot be accomodated, this function will throw <computeroutput>std::bad_alloc</computeroutput>. If exceptions are disabled by defining RAPIDXML_NO_EXCEPTIONS, this function will call <ref refid="namespacerapidxml_ff5d67f74437199d316d2b2660653ae1_1ff5d67f74437199d316d2b2660653ae1" kindref="member">parse_error_handler()</ref> function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of node to create. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name to assign to the node, or 0 to assign no name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to assign to the node, or 0 to assign no value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of name to assign, or 0 to automatically calculate size from name string. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of value to assign, or 0 to automatically calculate size from value string. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to allocated node. This pointer will never be NULL. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="377" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="374" bodyend="395"/>
+        <references refid="classrapidxml_1_1xml__base_622eade29fdf7806d3ef93ac4d90e707_1622eade29fdf7806d3ef93ac4d90e707" compoundref="rapidxml_8hpp" startline="601" endline="604">xml_base::name</references>
+        <references refid="classrapidxml_1_1xml__base_c54fa4987fb503916a7b541eb15c9c7f_1c54fa4987fb503916a7b541eb15c9c7f" compoundref="rapidxml_8hpp" startline="620" endline="623">xml_base::value</references>
+        <referencedby refid="classrapidxml_1_1memory__pool_95c49fcb056e9103ec906a59e3e01d76_195c49fcb056e9103ec906a59e3e01d76" compoundref="rapidxml_8hpp" startline="456" endline="479">memory_pool::clone_node</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_462de142669e0ff649e8e615b82bf457_1462de142669e0ff649e8e615b82bf457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__attribute" kindref="compound">xml_attribute</ref>&lt; Ch &gt; *</type>
+        <definition>xml_attribute&lt;Ch&gt;* allocate_attribute</definition>
+        <argsstring>(const Ch *name=0, const Ch *value=0, std::size_t name_size=0, std::size_t value_size=0)</argsstring>
+        <name>allocate_attribute</name>
+        <param>
+          <type>const Ch *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const Ch *</type>
+          <declname>value</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>name_size</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>value_size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a new attribute from the pool, and optionally assigns name and value to it. If the allocation request cannot be accomodated, this function will throw <computeroutput>std::bad_alloc</computeroutput>. If exceptions are disabled by defining RAPIDXML_NO_EXCEPTIONS, this function will call <ref refid="namespacerapidxml_ff5d67f74437199d316d2b2660653ae1_1ff5d67f74437199d316d2b2660653ae1" kindref="member">parse_error_handler()</ref> function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name to assign to the attribute, or 0 to assign no name. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to assign to the attribute, or 0 to assign no value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of name to assign, or 0 to automatically calculate size from name string. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of value to assign, or 0 to automatically calculate size from value string. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to allocated attribute. This pointer will never be NULL. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="408" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="406" bodyend="426"/>
+        <references refid="classrapidxml_1_1xml__base_622eade29fdf7806d3ef93ac4d90e707_1622eade29fdf7806d3ef93ac4d90e707" compoundref="rapidxml_8hpp" startline="601" endline="604">xml_base::name</references>
+        <references refid="classrapidxml_1_1xml__base_c54fa4987fb503916a7b541eb15c9c7f_1c54fa4987fb503916a7b541eb15c9c7f" compoundref="rapidxml_8hpp" startline="620" endline="623">xml_base::value</references>
+        <referencedby refid="classrapidxml_1_1memory__pool_95c49fcb056e9103ec906a59e3e01d76_195c49fcb056e9103ec906a59e3e01d76" compoundref="rapidxml_8hpp" startline="456" endline="479">memory_pool::clone_node</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_69729185bc59b0875192d667c47b8859_169729185bc59b0875192d667c47b8859" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Ch *</type>
+        <definition>Ch* allocate_string</definition>
+        <argsstring>(const Ch *source=0, std::size_t size=0)</argsstring>
+        <name>allocate_string</name>
+        <param>
+          <type>const Ch *</type>
+          <declname>source</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates a char array of given size from the pool, and optionally copies a given string to it. If the allocation request cannot be accomodated, this function will throw <computeroutput>std::bad_alloc</computeroutput>. If exceptions are disabled by defining RAPIDXML_NO_EXCEPTIONS, this function will call <ref refid="namespacerapidxml_ff5d67f74437199d316d2b2660653ae1_1ff5d67f74437199d316d2b2660653ae1" kindref="member">parse_error_handler()</ref> function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to initialize the allocated memory with, or 0 to not initialize it. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters to allocate, or zero to calculate it automatically from source string length; if size is 0, source string must be specified and null terminated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to allocated char array. This pointer will never be NULL. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="436" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="435" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_95c49fcb056e9103ec906a59e3e01d76_195c49fcb056e9103ec906a59e3e01d76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+        <definition>xml_node&lt;Ch&gt;* clone_node</definition>
+        <argsstring>(const xml_node&lt; Ch &gt; *source, xml_node&lt; Ch &gt; *result=0)</argsstring>
+        <name>clone_node</name>
+        <param>
+          <type>const <ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type><ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref>&lt; Ch &gt; *</type>
+          <declname>result</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clones an <ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref> and its hierarchy of child nodes and attributes. Nodes and attributes are allocated from this memory pool. Names and values are not cloned, they are shared between the clone and the source. Result node can be optionally specified as a second parameter, in which case its contents will be replaced with cloned source node. This is useful when you want to clone entire document. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node to clone. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Node to put results in, or 0 to automatically allocate result node </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to cloned node. This pointer will never be NULL. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="457" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="456" bodyend="479"/>
+        <references refid="classrapidxml_1_1memory__pool_462de142669e0ff649e8e615b82bf457_1462de142669e0ff649e8e615b82bf457" compoundref="rapidxml_8hpp" startline="406" endline="426">memory_pool::allocate_attribute</references>
+        <references refid="classrapidxml_1_1memory__pool_750ba3c610b129ac057d817509d08f41_1750ba3c610b129ac057d817509d08f41" compoundref="rapidxml_8hpp" startline="374" endline="395">memory_pool::allocate_node</references>
+        <references refid="classrapidxml_1_1xml__node_5810a09f82f8d53efbe9456286dcec83_15810a09f82f8d53efbe9456286dcec83" compoundref="rapidxml_8hpp" startline="950" endline="963">xml_node::first_attribute</references>
+        <references refid="classrapidxml_1_1xml__node_7823e36687669e59c2afdf66334ef35a_17823e36687669e59c2afdf66334ef35a" compoundref="rapidxml_8hpp" startline="861" endline="874">xml_node::first_node</references>
+        <references refid="classrapidxml_1_1xml__base_622eade29fdf7806d3ef93ac4d90e707_1622eade29fdf7806d3ef93ac4d90e707" compoundref="rapidxml_8hpp" startline="601" endline="604">xml_base::name</references>
+        <references refid="classrapidxml_1_1xml__base_0dae694c8f7e4d89f1003e2f3a15a43c_10dae694c8f7e4d89f1003e2f3a15a43c" compoundref="rapidxml_8hpp" startline="609" endline="612">xml_base::name_size</references>
+        <references refid="classrapidxml_1_1xml__node_975e86937621ae4afe6a423219de30d0_1975e86937621ae4afe6a423219de30d0" compoundref="rapidxml_8hpp" startline="838" endline="841">xml_node::type</references>
+        <references refid="classrapidxml_1_1xml__base_c54fa4987fb503916a7b541eb15c9c7f_1c54fa4987fb503916a7b541eb15c9c7f" compoundref="rapidxml_8hpp" startline="620" endline="623">xml_base::value</references>
+        <references refid="classrapidxml_1_1xml__base_aed5ae791b7164c1ee5e649198cbb3db_1aed5ae791b7164c1ee5e649198cbb3db" compoundref="rapidxml_8hpp" startline="628" endline="631">xml_base::value_size</references>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <reimplementedby refid="classrapidxml_1_1xml__document_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204">clear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears the pool. This causes memory occupied by nodes allocated by the pool to be freed. Any nodes or strings allocated from the pool will no longer be valid. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="485" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="484" bodyend="496"/>
+        <referencedby refid="classrapidxml_1_1memory__pool_6f8c7990d9ec1ed2acf6558b238570eb_16f8c7990d9ec1ed2acf6558b238570eb" compoundref="rapidxml_8hpp" startline="359" endline="362">memory_pool::~memory_pool</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_c0a55a6ef0837dca67572e357100d78a_1c0a55a6ef0837dca67572e357100d78a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_allocator</definition>
+        <argsstring>(alloc_func *af, free_func *ff)</argsstring>
+        <name>set_allocator</name>
+        <param>
+          <type>alloc_func *</type>
+          <declname>af</declname>
+        </param>
+        <param>
+          <type>free_func *</type>
+          <declname>ff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets or resets the user-defined memory allocation functions for the pool. This can only be called when no memory is allocated from the pool yet, otherwise results are undefined. Allocation function must not return invalid pointer on failure. It should either throw, stop the program, or use <computeroutput>longjmp()</computeroutput> function to pass control to other place of program. If it returns invalid pointer, results are undefined. <linebreak/>
+<linebreak/>
+ User defined allocation functions must have the following forms: <linebreak/>
+<computeroutput> <linebreak/>
+void *allocate(std::size_t size); <linebreak/>
+void free(void *pointer); </computeroutput><linebreak/>
+ <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>af</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocation function, or 0 to restore default function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Free function, or 0 to restore default function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="512" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="511" bodyend="516"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrapidxml_1_1memory__pool_152fc3d8e2739ea2b71b21dc59f6de3a_1152fc3d8e2739ea2b71b21dc59f6de3a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* allocate_memory</definition>
+        <argsstring>(std::size_t size)</argsstring>
+        <name>allocate_memory</name>
+        <param>
+          <type>std::size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="535" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="534" bodyend="559"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrapidxml_1_1memory__pool_52d6e76e84e0a2c623b332688b6ee578_152d6e76e84e0a2c623b332688b6ee578" prot="private" static="no" mutable="no">
+        <type>block *</type>
+        <definition>block* m_block</definition>
+        <argsstring></argsstring>
+        <name>m_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="561" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrapidxml_1_1memory__pool_338287d0a1c89d037708af4ff6d46a99_1338287d0a1c89d037708af4ff6d46a99" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="562" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrapidxml_1_1memory__pool_8104421a517bca131cf1c833f2bc059a_18104421a517bca131cf1c833f2bc059a" prot="private" static="no" mutable="no">
+        <type>block</type>
+        <definition>block m_static_block</definition>
+        <argsstring></argsstring>
+        <name>m_static_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="563" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrapidxml_1_1memory__pool_aa4ba307ad96ed39acff69d49380023b_1aa4ba307ad96ed39acff69d49380023b" prot="private" static="no" mutable="no">
+        <type>alloc_func *</type>
+        <definition>alloc_func* m_alloc_func</definition>
+        <argsstring></argsstring>
+        <name>m_alloc_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="564" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrapidxml_1_1memory__pool_5c24ed09a3bb3b3f534b3473c6b9e929_15c24ed09a3bb3b3f534b3473c6b9e929" prot="private" static="no" mutable="no">
+        <type>free_func *</type>
+        <definition>free_func* m_free_func</definition>
+        <argsstring></argsstring>
+        <name>m_free_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="565" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="565" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is used by the parser to create new nodes and attributes, without overheads of dynamic memory allocation. In most cases, you will not need to use this class directly. However, if you need to create nodes manually or modify names/values of nodes, you are encouraged to use <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref> of relevant <ref refid="classrapidxml_1_1xml__document" kindref="compound">xml_document</ref> to allocate the memory. Not only is this faster than allocating them by using <computeroutput>new</computeroutput> operator, but also their lifetime will be tied to the lifetime of document, possibly simplyfing memory management. <linebreak/>
+<linebreak/>
+ Call <ref refid="classrapidxml_1_1memory__pool_750ba3c610b129ac057d817509d08f41_1750ba3c610b129ac057d817509d08f41" kindref="member">allocate_node()</ref> or <ref refid="classrapidxml_1_1memory__pool_462de142669e0ff649e8e615b82bf457_1462de142669e0ff649e8e615b82bf457" kindref="member">allocate_attribute()</ref> functions to obtain new nodes or attributes from the pool. You can also call <ref refid="classrapidxml_1_1memory__pool_69729185bc59b0875192d667c47b8859_169729185bc59b0875192d667c47b8859" kindref="member">allocate_string()</ref> function to allocate strings. Such strings can then be used as names or values of nodes without worrying about their lifetime. Note that there is no <computeroutput>free()</computeroutput> function -- all allocations are freed at once when <ref refid="classrapidxml_1_1memory__pool_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204" kindref="member">clear()</ref> function is called, or when the pool is destroyed. <linebreak/>
+<linebreak/>
+ It is also possible to create a standalone <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref>, and use it to allocate nodes, whose lifetime will not be tied to any document. <linebreak/>
+<linebreak/>
+ Pool maintains <computeroutput>RAPIDXML_STATIC_POOL_SIZE</computeroutput> bytes of statically allocated memory. Until static memory is exhausted, no dynamic memory allocations are done. When static memory is exhausted, pool allocates additional blocks of memory of size <computeroutput>RAPIDXML_DYNAMIC_POOL_SIZE</computeroutput> each, by using global <computeroutput>new[]</computeroutput> and <computeroutput>delete[]</computeroutput> operators. This behaviour can be changed by setting custom allocation routines. Use <ref refid="classrapidxml_1_1memory__pool_c0a55a6ef0837dca67572e357100d78a_1c0a55a6ef0837dca67572e357100d78a" kindref="member">set_allocator()</ref> function to set them. <linebreak/>
+<linebreak/>
+ To obtain absolutely top performance from the parser, it is important that all nodes are allocated from a single, contiguous block of memory. Otherwise, cache misses when jumping between two (or more) disjoint blocks of memory can slow down parsing quite considerably. If required, you can tweak <computeroutput>RAPIDXML_STATIC_POOL_SIZE</computeroutput> and <computeroutput>RAPIDXML_DYNAMIC_POOL_SIZE</computeroutput> to obtain best wasted memory to performance compromise. To do it, define their values before <ref refid="rapidxml_8hpp" kindref="compound">rapidxml.hpp</ref> file is included. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Character type of created nodes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>xml_document&lt; Ch &gt;</label>
+        <link refid="classrapidxml_1_1xml__document"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>memory_pool</label>
+        <link refid="classrapidxml_1_1memory__pool"/>
+      </node>
+    </inheritancegraph>
+    <location file="d:/Sources/rapidxml/rapidxml.hpp" line="337" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="336" bodyend="567"/>
+    <listofallmembers>
+      <member refid="classrapidxml_1_1memory__pool_462de142669e0ff649e8e615b82bf457_1462de142669e0ff649e8e615b82bf457" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>allocate_attribute</name></member>
+      <member refid="classrapidxml_1_1memory__pool_152fc3d8e2739ea2b71b21dc59f6de3a_1152fc3d8e2739ea2b71b21dc59f6de3a" prot="private" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>allocate_memory</name></member>
+      <member refid="classrapidxml_1_1memory__pool_750ba3c610b129ac057d817509d08f41_1750ba3c610b129ac057d817509d08f41" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>allocate_node</name></member>
+      <member refid="classrapidxml_1_1memory__pool_69729185bc59b0875192d667c47b8859_169729185bc59b0875192d667c47b8859" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>allocate_string</name></member>
+      <member refid="classrapidxml_1_1memory__pool_c8bb3912a3ce86b15842e79d0b421204_1c8bb3912a3ce86b15842e79d0b421204" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>clear</name></member>
+      <member refid="classrapidxml_1_1memory__pool_95c49fcb056e9103ec906a59e3e01d76_195c49fcb056e9103ec906a59e3e01d76" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>clone_node</name></member>
+      <member refid="classrapidxml_1_1memory__pool_aa4ba307ad96ed39acff69d49380023b_1aa4ba307ad96ed39acff69d49380023b" prot="private" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>m_alloc_func</name></member>
+      <member refid="classrapidxml_1_1memory__pool_52d6e76e84e0a2c623b332688b6ee578_152d6e76e84e0a2c623b332688b6ee578" prot="private" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>m_block</name></member>
+      <member refid="classrapidxml_1_1memory__pool_5c24ed09a3bb3b3f534b3473c6b9e929_15c24ed09a3bb3b3f534b3473c6b9e929" prot="private" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>m_free_func</name></member>
+      <member refid="classrapidxml_1_1memory__pool_338287d0a1c89d037708af4ff6d46a99_1338287d0a1c89d037708af4ff6d46a99" prot="private" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>m_size</name></member>
+      <member refid="classrapidxml_1_1memory__pool_8104421a517bca131cf1c833f2bc059a_18104421a517bca131cf1c833f2bc059a" prot="private" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>m_static_block</name></member>
+      <member refid="classrapidxml_1_1memory__pool_f8fb3c8f1a564f8045c40bcd07a89866_1f8fb3c8f1a564f8045c40bcd07a89866" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>memory_pool</name></member>
+      <member refid="classrapidxml_1_1memory__pool_c0a55a6ef0837dca67572e357100d78a_1c0a55a6ef0837dca67572e357100d78a" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>set_allocator</name></member>
+      <member refid="classrapidxml_1_1memory__pool_6f8c7990d9ec1ed2acf6558b238570eb_16f8c7990d9ec1ed2acf6558b238570eb" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool</scope><name>~memory_pool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

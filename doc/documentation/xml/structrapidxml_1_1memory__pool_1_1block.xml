@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.7">
+  <compounddef id="structrapidxml_1_1memory__pool_1_1block" kind="struct" prot="private">
+    <compoundname>rapidxml::memory_pool::block</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrapidxml_1_1memory__pool_1_1block_d1dc0f1a5752b0b3907ef7057bd45739_1d1dc0f1a5752b0b3907ef7057bd45739" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>block</definition>
+        <argsstring>(block *previous_block)</argsstring>
+        <name>block</name>
+        <param>
+          <type>block *</type>
+          <declname>previous_block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="526" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="523" bodyend="527"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrapidxml_1_1memory__pool_1_1block_81d0c1f89e2669ae5327e00a02d713e1_181d0c1f89e2669ae5327e00a02d713e1" prot="public" static="no" mutable="no">
+        <type>block *</type>
+        <definition>block* previous_block</definition>
+        <argsstring></argsstring>
+        <name>previous_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="528" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrapidxml_1_1memory__pool_1_1block_c7fe156021645322f9fccaec37e5a864_1c7fe156021645322f9fccaec37e5a864" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="529" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrapidxml_1_1memory__pool_1_1block_9e7303e4e719b1c7e4accbfd2666f20f_19e7303e4e719b1c7e4accbfd2666f20f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char data[RAPIDXML_STATIC_POOL_SIZE]</definition>
+        <argsstring>[RAPIDXML_STATIC_POOL_SIZE]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="530" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="d:/Sources/rapidxml/rapidxml.hpp" line="522" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="521" bodyend="531"/>
+    <listofallmembers>
+      <member refid="structrapidxml_1_1memory__pool_1_1block_d1dc0f1a5752b0b3907ef7057bd45739_1d1dc0f1a5752b0b3907ef7057bd45739" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool::block</scope><name>block</name></member>
+      <member refid="structrapidxml_1_1memory__pool_1_1block_9e7303e4e719b1c7e4accbfd2666f20f_19e7303e4e719b1c7e4accbfd2666f20f" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool::block</scope><name>data</name></member>
+      <member refid="structrapidxml_1_1memory__pool_1_1block_c7fe156021645322f9fccaec37e5a864_1c7fe156021645322f9fccaec37e5a864" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool::block</scope><name>pointer</name></member>
+      <member refid="structrapidxml_1_1memory__pool_1_1block_81d0c1f89e2669ae5327e00a02d713e1_181d0c1f89e2669ae5327e00a02d713e1" prot="public" virt="non-virtual"><scope>rapidxml::memory_pool::block</scope><name>previous_block</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

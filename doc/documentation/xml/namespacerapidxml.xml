@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.7">
+  <compounddef id="namespacerapidxml" kind="namespace">
+    <compoundname>rapidxml</compoundname>
+    <innerclass refid="classrapidxml_1_1parse__error" prot="public">rapidxml::parse_error</innerclass>
+    <innerclass refid="classrapidxml_1_1memory__pool" prot="public">rapidxml::memory_pool</innerclass>
+    <innerclass refid="classrapidxml_1_1xml__base" prot="public">rapidxml::xml_base</innerclass>
+    <innerclass refid="classrapidxml_1_1xml__attribute" prot="public">rapidxml::xml_attribute</innerclass>
+    <innerclass refid="classrapidxml_1_1xml__node" prot="public">rapidxml::xml_node</innerclass>
+    <innerclass refid="classrapidxml_1_1xml__document" prot="public">rapidxml::xml_document</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682" prot="public" static="no">
+        <name>node_type</name>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556820727d72be650e2fb7662beec8e92623a" prot="public">
+          <name>node_document</name>
+          <briefdescription>
+<para>A document node. Name and value are empty. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682a0f3570940dc9ef54a2c4102d7cf81ab" prot="public">
+          <name>node_element</name>
+          <briefdescription>
+<para>An element node. Name contains element name. Value contains text of first data node. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556826941a6ead3f133ae750be3d0b9e0ed5d" prot="public">
+          <name>node_data</name>
+          <briefdescription>
+<para>A data node. Name is empty. Value contains data text. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556823a51c199de37009778e9e34f817d7093" prot="public">
+          <name>node_cdata</name>
+          <briefdescription>
+<para>A CDATA node. Name is empty. Value contains data text. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682a31101aa86d3d2789f3cb0ec05124789" prot="public">
+          <name>node_comment</name>
+          <briefdescription>
+<para>A comment node. Name is empty. Value contains comment text. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682f64b60b7717e635114f2c46235f35092" prot="public">
+          <name>node_declaration</name>
+          <briefdescription>
+<para>A declaration node. Name and value are empty. Declaration parameters (version, encoding and standalone) are in node attributes. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c55682929a6006793b96799613e38f2b382055" prot="public">
+          <name>node_doctype</name>
+          <briefdescription>
+<para>A DOCTYPE node. Name is empty. Value contains DOCTYPE text. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacerapidxml_6a276b85e2da28c5f9c3dbce61c55682_16a276b85e2da28c5f9c3dbce61c556821b24363265b5e278ca1e16f390818fae" prot="public">
+          <name>node_pi</name>
+          <briefdescription>
+<para>A PI node. Name contains target. Value contains instructions. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enumeration listing all node types produced by the parser. Use <ref refid="classrapidxml_1_1xml__node_975e86937621ae4afe6a423219de30d0_1975e86937621ae4afe6a423219de30d0" kindref="member">xml_node::type()</ref> function to query node type. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="137" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="136" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacerapidxml_ff5d67f74437199d316d2b2660653ae1_1ff5d67f74437199d316d2b2660653ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rapidxml::parse_error_handler</definition>
+        <argsstring>(const char *what, void *where)</argsstring>
+        <name>parse_error_handler</name>
+        <param>
+          <type>const char *</type>
+          <declname>what</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>where</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When exceptions are disabled by defining RAPIDXML_NO_EXCEPTIONS, this function is called to notify user about the error. It must be defined by the user. <linebreak/>
+<linebreak/>
+ This function cannot return. If it does, the results are undefined. <linebreak/>
+<linebreak/>
+ A very simple definition might look like that: <preformatted>
+        void rapidxml::parse_error_handler(const char *what, void *where)
+        {
+            std::cout &lt;&lt; &quot;Parse error: &quot; &lt;&lt; what &lt;&lt; &quot;\n&quot;;
+            std::abort();
+        }
+        </preformatted> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>what</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Human readable description of the error. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to character data where error was detected. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacerapidxml_87e8bbab53702cf3b438bd553c10b6b9_187e8bbab53702cf3b438bd553c10b6b9" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_no_data_nodes</definition>
+        <argsstring></argsstring>
+        <name>parse_no_data_nodes</name>
+        <initializer> 0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to not create data nodes. Text of first data node will still be placed in value of parent element, unless parse_no_element_values flag is also specified. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="155" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_97e2c4fdc04fae17126f9971a4fc993e_197e2c4fdc04fae17126f9971a4fc993e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_no_element_values</definition>
+        <argsstring></argsstring>
+        <name>parse_no_element_values</name>
+        <initializer> 0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to not use text of first data node as a value of parent element. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="159" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_9cae3801e70437cbc410c24bf6be691c_19cae3801e70437cbc410c24bf6be691c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_no_string_terminators</definition>
+        <argsstring></argsstring>
+        <name>parse_no_string_terminators</name>
+        <initializer> 0x4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to not place zero terminators after strings in the source text. By default zero terminators are placed, modifying source text. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="164" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_7223b7815c4fb8b42e6e4e77e1ea6b97_17223b7815c4fb8b42e6e4e77e1ea6b97" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_no_entity_translation</definition>
+        <argsstring></argsstring>
+        <name>parse_no_entity_translation</name>
+        <initializer> 0x8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to not translate entities in the source text. By default entities are translated, modifying source text. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="169" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_ccde57f6054857ee4042a1b4d98c83b9_1ccde57f6054857ee4042a1b4d98c83b9" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_no_utf8</definition>
+        <argsstring></argsstring>
+        <name>parse_no_utf8</name>
+        <initializer> 0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to disable UTF-8 handling and assume plain 8 bit characters. By default, UTF-8 handling is enabled. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="174" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_52e2c934ad9c845a5f4cc49570470556_152e2c934ad9c845a5f4cc49570470556" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_declaration_node</definition>
+        <argsstring></argsstring>
+        <name>parse_declaration_node</name>
+        <initializer> 0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to create XML declaration node. By default, declaration node is not created. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="179" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_0f7479dacbc868456d07897a8c072784_10f7479dacbc868456d07897a8c072784" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_comment_nodes</definition>
+        <argsstring></argsstring>
+        <name>parse_comment_nodes</name>
+        <initializer> 0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to create comments nodes. By default, comment nodes are not created. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="184" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_8e187746ba1ca04f107951ad32df962e_18e187746ba1ca04f107951ad32df962e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_doctype_node</definition>
+        <argsstring></argsstring>
+        <name>parse_doctype_node</name>
+        <initializer> 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to create DOCTYPE node. By default, doctype node is not created. Although W3C specification allows at most one DOCTYPE node, RapidXml will silently accept documents with more than one. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="190" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_1c20b2b2b75711cd76423e119c49f830_11c20b2b2b75711cd76423e119c49f830" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_pi_nodes</definition>
+        <argsstring></argsstring>
+        <name>parse_pi_nodes</name>
+        <initializer> 0x100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to create PI nodes. By default, PI nodes are not created. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="195" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_a5daff9d61c7d4eaf98e4d42efe628ee_1a5daff9d61c7d4eaf98e4d42efe628ee" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_validate_closing_tags</definition>
+        <argsstring></argsstring>
+        <name>parse_validate_closing_tags</name>
+        <initializer> 0x200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to validate closing tag names. If not set, name inside closing tag is irrelevant to the parser. By default, closing tags are not validated. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="201" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_ac1f06b1afd47b812732fb521b146fd9_1ac1f06b1afd47b812732fb521b146fd9" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_trim_whitespace</definition>
+        <argsstring></argsstring>
+        <name>parse_trim_whitespace</name>
+        <initializer> 0x400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to trim all leading and trailing whitespace of data nodes. By default, whitespace is not trimmed. This flag does not cause the parser to modify source text. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="207" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_88f95d4e275ba01408fefde83078651b_188f95d4e275ba01408fefde83078651b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_normalize_whitespace</definition>
+        <argsstring></argsstring>
+        <name>parse_normalize_whitespace</name>
+        <initializer> 0x800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flag instructing the parser to condense all whitespace runs of data nodes to a single space character. Trimming of leading and trailing whitespace of data is controlled by parse_trim_whitespace flag. By default, whitespace is not normalized. If this flag is specified, source text will be modified. Can be combined with other flags by use of | operator. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="214" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_45751cf2f38fd6915f35b3122b46d5b6_145751cf2f38fd6915f35b3122b46d5b6" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_default</definition>
+        <argsstring></argsstring>
+        <name>parse_default</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse flags which represent default behaviour of the parser. This is always equal to 0, so that all other flags can be simply ored together. Normally there is no need to inconveniently disable flags by anding with their negated (~) values. This also means that meaning of each flag is a <emphasis>negation</emphasis> of the default setting. For example, if flag name is <computeroutput>parse_no_utf8</computeroutput>, it means that utf-8 is <emphasis>enabled</emphasis> by default, and using the flag will disable it. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="224" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_a97ba1a0a79a6d66f4eef3612508d943_1a97ba1a0a79a6d66f4eef3612508d943" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_non_destructive</definition>
+        <argsstring></argsstring>
+        <name>parse_non_destructive</name>
+        <initializer> <ref refid="namespacerapidxml_9cae3801e70437cbc410c24bf6be691c_19cae3801e70437cbc410c24bf6be691c" kindref="member">parse_no_string_terminators</ref> | <ref refid="namespacerapidxml_7223b7815c4fb8b42e6e4e77e1ea6b97_17223b7815c4fb8b42e6e4e77e1ea6b97" kindref="member">parse_no_entity_translation</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of parse flags that forbids any modifications of the source text. This also results in faster parsing. However, note that the following will occur: <itemizedlist>
+<listitem>
+<para>names and values of nodes will not be zero terminated, you have to use <ref refid="classrapidxml_1_1xml__base_0dae694c8f7e4d89f1003e2f3a15a43c_10dae694c8f7e4d89f1003e2f3a15a43c" kindref="member">xml_base::name_size()</ref> and <ref refid="classrapidxml_1_1xml__base_aed5ae791b7164c1ee5e649198cbb3db_1aed5ae791b7164c1ee5e649198cbb3db" kindref="member">xml_base::value_size()</ref> functions to determine where name and value ends </para></listitem>
+<listitem>
+<para>entities will not be translated </para></listitem>
+<listitem>
+<para>whitespace will not be normalized </para></listitem>
+</itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="233" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_398c5476e76102f8bd76c10bb0abbe10_1398c5476e76102f8bd76c10bb0abbe10" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_fastest</definition>
+        <argsstring></argsstring>
+        <name>parse_fastest</name>
+        <initializer> <ref refid="namespacerapidxml_a97ba1a0a79a6d66f4eef3612508d943_1a97ba1a0a79a6d66f4eef3612508d943" kindref="member">parse_non_destructive</ref> | <ref refid="namespacerapidxml_87e8bbab53702cf3b438bd553c10b6b9_187e8bbab53702cf3b438bd553c10b6b9" kindref="member">parse_no_data_nodes</ref></initializer>
+        <briefdescription>
+<para>A combination of parse flags resulting in fastest possible parsing, without sacrificing important data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="236" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacerapidxml_b4f2515265facb42291570307924bd57_1b4f2515265facb42291570307924bd57" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int parse_full</definition>
+        <argsstring></argsstring>
+        <name>parse_full</name>
+        <initializer> <ref refid="namespacerapidxml_52e2c934ad9c845a5f4cc49570470556_152e2c934ad9c845a5f4cc49570470556" kindref="member">parse_declaration_node</ref> | <ref refid="namespacerapidxml_0f7479dacbc868456d07897a8c072784_10f7479dacbc868456d07897a8c072784" kindref="member">parse_comment_nodes</ref> | <ref refid="namespacerapidxml_8e187746ba1ca04f107951ad32df962e_18e187746ba1ca04f107951ad32df962e" kindref="member">parse_doctype_node</ref> | <ref refid="namespacerapidxml_1c20b2b2b75711cd76423e119c49f830_11c20b2b2b75711cd76423e119c49f830" kindref="member">parse_pi_nodes</ref> | <ref refid="namespacerapidxml_a5daff9d61c7d4eaf98e4d42efe628ee_1a5daff9d61c7d4eaf98e4d42efe628ee" kindref="member">parse_validate_closing_tags</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A combination of parse flags resulting in largest amount of data being extracted. This usually results in slowest parsing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="240" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><emphasis>Copyright (C) 2006, 2007 Marcin Kalicinski</emphasis> <linebreak/>
+ <emphasis>See accompanying file <ulink url="license.txt">license.txt</ulink> for license information.</emphasis> <hruler/>
+ <heading level="2">Table of Contents</heading>
+</para><para> <toc></toc>  <linebreak/>
+</para><sect1 id="namespacerapidxml_1what_is_rapidxml">
+<title>What is RapidXml?</title>
+<para><ulink url="http://rapidxml.sourceforge.net">RapidXml</ulink> is an attempt to create the fastest XML DOM parser possible, while retaining useability, portability and reasonable W3C compatibility. It is an in-situ parser written in C++, with parsing speed approaching that of <computeroutput>strlen()</computeroutput> function executed on the same data. <linebreak/>
+<linebreak/>
+ Entire parser is contained in a single header file, so no building or linking is neccesary. To use it you just need to copy <computeroutput>rapidxml.hpp</computeroutput> file to a convenient place (such as your project directory), and include it where needed. You may also want to use utilities contained in headers <computeroutput>rapidxml_print.hpp</computeroutput> and <computeroutput>rapidxml_utils.hpp</computeroutput>, although these are not documented.</para><sect2 id="namespacerapidxml_1dependencies_and_compatibility">
+<title>Dependencies And Compatibility</title>
+<para>RapidXml has <emphasis>no dependencies</emphasis> other than a very small subset of standard C++ library (namely <computeroutput>&lt;cassert&gt;</computeroutput>, <computeroutput>&lt;cstdlib&gt;</computeroutput>, <computeroutput>&lt;new&gt;</computeroutput> and <computeroutput>&lt;exception&gt;</computeroutput>, unless exceptions are disabled). It should compile on any reasonably conformant compiler, and was tested on Visual C++ 2003, Visual C++ 2005, gcc 3, gcc 4, and Comeau 4.3.3. Care was taken that no warnings are produced on these compilers, even with highest warning levels enabled.</para></sect2>
+<sect2 id="namespacerapidxml_1character_types_and_encodings">
+<title>Character Types And Encodings</title>
+<para>RapidXml is character type agnostic, and can work both with narrow and wide characters. Current version only fully supports UTF-8, so use of wide characters is somewhat incapacitated. However, it should succesfully parse <computeroutput>wchar_t</computeroutput> strings containing UTF-16 or UTF-32 (depending on the <computeroutput>wchar_t</computeroutput> size), provided that endianness of the data matches that of the machine. This is often the case if data was loaded by use of standard library streams working in text mode.</para></sect2>
+<sect2 id="namespacerapidxml_1error_handling">
+<title>Error Handling</title>
+<para>By default, RapidXml uses C++ exceptions to report errors. If this behaviour is undesirable, RAPIDXML_NO_EXCEPTIONS can be defined to suppress exception code. See <ref refid="classrapidxml_1_1parse__error" kindref="compound">parse_error</ref> class and <ref refid="namespacerapidxml_ff5d67f74437199d316d2b2660653ae1_1ff5d67f74437199d316d2b2660653ae1" kindref="member">parse_error_handler()</ref> function for more information.</para></sect2>
+<sect2 id="namespacerapidxml_1memory_allocation">
+<title>Memory Allocation</title>
+<para>RapidXml uses a special memory pool object to allocate nodes and attributes, because direct allocation using <computeroutput>new</computeroutput> operator would be far too slow. Underlying memory allocations performed by the pool can be customized by use of <ref refid="classrapidxml_1_1memory__pool_c0a55a6ef0837dca67572e357100d78a_1c0a55a6ef0837dca67572e357100d78a" kindref="member">memory_pool::set_allocator()</ref> function. See class <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref> for more information.</para></sect2>
+<sect2 id="namespacerapidxml_1w3c_compliance">
+<title>W3C Compliance</title>
+<para>RapidXml is not a W3C compliant parser, primarily because it ignores DOCTYPE declarations. There is a number of other, minor incompatibilities as well. Still, it can successfully parse and produce complete trees of all valid XML files in W3C conformance suite (over 1000 files specially designed to find flaws in XML processors). In destructive mode it performs whitespace normalization and character entity substitution for a small set of built-in entities.</para></sect2>
+<sect2 id="namespacerapidxml_1api_design">
+<title>API Design</title>
+<para>RapidXml API is minimalistic, to reduce code size as much as possible, and facilitate use in embedded environments. Additional convenience functions are provided in separate headers: <computeroutput>rapidxml_utils.hpp</computeroutput> and <computeroutput>rapidxml_print.hpp</computeroutput>. Contents of these headers is not an essential part of the library, and is currently not documented (otherwise than with comments in code).</para></sect2>
+<sect2 id="namespacerapidxml_1reliability">
+<title>Reliability</title>
+<para>RapidXml is very robust and comes with a large harness of unit tests. Special care has been taken to ensure stability of the parser no matter what source text is thrown at it. One of the unit tests produces 100,000 randomly corrupted variants of XML document, which (when uncorrupted) contains all constructs recognized by RapidXml. RapidXml passes this test when it correctly recognizes that errors have been introduced, and does not crash or loop indefinitely. <linebreak/>
+<linebreak/>
+ Another unit test puts RapidXml head-to-head with another, well estabilished XML parser, and verifies that their outputs match across a wide variety of small and large documents. <linebreak/>
+<linebreak/>
+ Yet another test feeds RapidXml with over 1000 test files from W3C compliance suite, and verifies that correct results are obtained. There are also additional tests that verify each API function separately, and test that various parsing modes work as expected.</para></sect2>
+<sect2 id="namespacerapidxml_1acknowledgements">
+<title>Acknowledgements</title>
+<para>I would like to thank Arseny Kapoulkine for his work on <ulink url="http://code.google.com/p/pugixml">pugixml</ulink>, which was an inspiration for this project. Additional thanks go to Kristen Wegner for creating <ulink url="http://www.codeproject.com/soap/pugxml.asp">pugxml</ulink>, from which pugixml was derived. Janusz Wohlfeil kindly ran RapidXml speed tests on hardware that I did not have access to, allowing me to expand performance comparison table.</para></sect2>
+</sect1>
+<sect1 id="namespacerapidxml_1two_minute_tutorial">
+<title>Two Minute Tutorial</title>
+<sect2 id="namespacerapidxml_1paring">
+<title>Parsing</title>
+<para>The following code causes RapidXml to parse a zero-terminated string named <computeroutput>text</computeroutput>: <preformatted>
+    using namespace rapidxml;
+    xml_document&lt;&gt; doc;    // character type defaults to char
+    doc.parse&lt;0&gt;(text);    // 0 means default parse flags
+    </preformatted> <computeroutput>doc</computeroutput> object is now a root of DOM tree containing representation of the parsed XML. Because all RapidXml interface is contained inside namespace <computeroutput>rapidxml</computeroutput>, users must either bring contents of this namespace into scope, or fully qualify all the names. Class <ref refid="classrapidxml_1_1xml__document" kindref="compound">xml_document</ref> represents a root of the DOM hierarchy. By means of public inheritance, it is also an <ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref> and a <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref>. Template parameter of <ref refid="classrapidxml_1_1xml__document_8338ce6042e7b04d5a42144fb446b69c_18338ce6042e7b04d5a42144fb446b69c" kindref="member">xml_document::parse()</ref> function is used to specify parsing flags, with which you can fine-tune behaviour of the parser. Note that flags must be a compile-time constant.</para></sect2>
+<sect2 id="namespacerapidxml_1accessing_dom_tree">
+<title>Accessing The DOM Tree</title>
+<para>To access the DOM tree, use methods of <ref refid="classrapidxml_1_1xml__node" kindref="compound">xml_node</ref> and <ref refid="classrapidxml_1_1xml__attribute" kindref="compound">xml_attribute</ref> classes: <preformatted>
+    cout &lt;&lt; &quot;Name of my first node is: &quot; &lt;&lt; doc.first_node()-&gt;name() &lt;&lt; &quot;\n&quot;;
+    xml_node&lt;&gt; *node = doc.first_node(&quot;foobar&quot;);
+    cout &lt;&lt; &quot;Node foobar has value &quot; &lt;&lt; node-&gt;value() &lt;&lt; &quot;\n&quot;;
+    for (xml_attribute&lt;&gt; *attr = node-&gt;first_attribute();
+         attr; attr = attr-&gt;next_attribute())
+    {
+        cout &lt;&lt; &quot;Node foobar has attribute &quot; &lt;&lt; attr-&gt;name() &lt;&lt; &quot; &quot;;
+        cout &lt;&lt; &quot;with value &quot; &lt;&lt; attr-&gt;value() &lt;&lt; &quot;\n&quot;;
+    }
+    </preformatted></para></sect2>
+<sect2 id="namespacerapidxml_1modifying_dom_tree">
+<title>Modifying The DOM Tree</title>
+<para>DOM tree produced by the parser is fully modifiable. Nodes and attributes can be added/removed, and their contents changed. The below example creates a HTML document, whose sole contents is a link to google.com website: <preformatted>
+    xml_document&lt;&gt; doc;
+    xml_node&lt;&gt; *node = doc.allocate_node(node_element, &quot;a&quot;, &quot;Google&quot;);
+    doc.append_node(node);
+    xml_attribute&lt;&gt; *attr = doc.allocate_attribute(&quot;href&quot;, &quot;google.com&quot;);
+    node-&gt;append_attribute(attr);
+    </preformatted> One quirk is that nodes and attributes <emphasis>do not own</emphasis> the text of their names and values. This is because normally they only store pointers to the source text. So, when assigning a new name or value to the node, care must be taken to ensure proper lifetime of the string. The easiest way to achieve it is to allocate the string from the <ref refid="classrapidxml_1_1xml__document" kindref="compound">xml_document</ref> memory pool. In the above example this is not necessary, because we are only assigning character constants. But the code below uses <ref refid="classrapidxml_1_1memory__pool_69729185bc59b0875192d667c47b8859_169729185bc59b0875192d667c47b8859" kindref="member">memory_pool::allocate_string()</ref> function to allocate node name (which will have the same lifetime as the document), and assigns it to a new node: <preformatted>
+    xml_document&lt;&gt; doc;
+    char *node_name = doc.allocate_string(name);        // Allocate string and copy name into it
+    xml_node&lt;&gt; *node = doc.allocate_node(node_element, node_name);  // Set node name to node_name
+    </preformatted> Check <ref refid="namespacerapidxml_1reference" kindref="member">Reference</ref>  section for description of the entire interface.</para></sect2>
+</sect1>
+<sect1 id="namespacerapidxml_1differences">
+<title>Differences From Regular XML Parsers</title>
+<para>RapidXml is an <emphasis>in-situ parser</emphasis>, which allows it to achieve very high parsing speed. In-situ means that parser does not make copies of strings. Instead, it places pointers to the <emphasis>source text</emphasis> in the DOM hierarchy.</para><sect2 id="namespacerapidxml_1lifetime_of_source_text">
+<title>Lifetime Of Source Text</title>
+<para>In-situ parsing requires that source text lives at least as long as the document object. If source text is destroyed, names and values of nodes in DOM tree will become destroyed as well. Additionally, whitespace processing, character entity translation, and zero-termination of strings require that source text be modified during parsing (but see non-destructive mode). This makes the text useless for further processing once it was parsed by RapidXml. <linebreak/>
+<linebreak/>
+ In many cases however, these are not serious issues.</para></sect2>
+<sect2 id="namespacerapidxml_1ownership_of_strings">
+<title>Ownership Of Strings</title>
+<para>Nodes and attributes produced by RapidXml do not own their name and value strings. They merely hold the pointers to them. This means you have to be careful when setting these values manually, by using <ref refid="classrapidxml_1_1xml__base_e099c291e104a0d277307fe71f5e0f9e_1e099c291e104a0d277307fe71f5e0f9e" kindref="member">xml_base::name(const Ch *)</ref> or <ref refid="classrapidxml_1_1xml__base_18c7469acdca771de9b4f3054053029c_118c7469acdca771de9b4f3054053029c" kindref="member">xml_base::value(const Ch *)</ref> functions. Care must be taken to ensure that lifetime of the string passed is at least as long as lifetime of the node/attribute. The easiest way to achieve it is to allocate the string from <ref refid="classrapidxml_1_1memory__pool" kindref="compound">memory_pool</ref> owned by the document. Use <ref refid="classrapidxml_1_1memory__pool_69729185bc59b0875192d667c47b8859_169729185bc59b0875192d667c47b8859" kindref="member">memory_pool::allocate_string()</ref> function for this purpose.</para></sect2>
+<sect2 id="namespacerapidxml_1destructive_non_destructive">
+<title>Destructive Vs Non-Destructive Mode</title>
+<para>By default, the parser modifies source text during the parsing process. This is required to achieve character entity translation, whitespace normalization, and zero-termination of strings. <linebreak/>
+<linebreak/>
+ In some cases this behaviour may be undesirable, for example if source text resides in read only memory, or is mapped to memory directly from file. By using appropriate parser flags (parse_non_destructive), source text modifications can be disabled. However, because RapidXml does in-situ parsing, it obviously has the following side-effects:<itemizedlist>
+<listitem><para>no whitespace normalization is done</para></listitem><listitem><para>no entity reference translation is done</para></listitem><listitem><para>names and values are not zero-terminated, you must use <ref refid="classrapidxml_1_1xml__base_0dae694c8f7e4d89f1003e2f3a15a43c_10dae694c8f7e4d89f1003e2f3a15a43c" kindref="member">xml_base::name_size()</ref> and <ref refid="classrapidxml_1_1xml__base_aed5ae791b7164c1ee5e649198cbb3db_1aed5ae791b7164c1ee5e649198cbb3db" kindref="member">xml_base::value_size()</ref> functions to tell where they end</para></listitem></itemizedlist>
+</para></sect2>
+</sect1>
+<sect1 id="namespacerapidxml_1performance">
+<title>Performance</title>
+<para>RapidXml achieves its speed through use of several techniques:<itemizedlist>
+<listitem><para>In-situ parsing. When building DOM tree, RapidXml does not make copies of string data, such as node names and values. Instead, it stores pointers to interior of the source text.</para></listitem><listitem><para>Use of template metaprogramming techniques. This allows it to move much of the work to compile time. Through magic of the templates, C++ compiler generates a separate copy of parsing code for any combination of parser flags you use. In each copy, all possible decisions are made at compile time and all unused code is omitted.</para></listitem><listitem><para>Extensive use of lookup tables for parsing.</para></listitem><listitem><para>Hand-tuned C++ with profiling done on several most popular CPUs.</para></listitem></itemizedlist>
+</para><para>This results in a very small and fast code: a parser which is custom tailored to exact needs with each invocation.</para><sect2 id="namespacerapidxml_1performance_charts">
+<title>Comparison With Other Parsers</title>
+<para>The table below compares speed of RapidXml to some other parsers, and to <computeroutput>strlen()</computeroutput> function executed on the same data. On a modern CPU (as of 2007), you can expect parsing throughput to be close to 1 GB/s. As a rule of thumb, parsing speed is about 50-100x faster than Xerces DOM, 30-60x faster than TinyXml, 3-12x faster than pugxml, and about 5% - 30% faster than pugixml, the fastest XML parser I know of.</para><para><itemizedlist>
+<listitem>
+<para>The test file is a real-world, 50kB large, moderately dense XML file. </para></listitem>
+<listitem>
+<para>All timing is done by using RDTSC instruction present in Pentium-compatible CPUs. </para></listitem>
+<listitem>
+<para>No profile-guided optimizations are used. </para></listitem>
+<listitem>
+<para>All parsers are running in their fastest modes. </para></listitem>
+<listitem>
+<para>The results are given in CPU cycles per character, so frequency of CPUs is irrelevant. </para></listitem>
+<listitem>
+<para>The results are minimum values from a large number of runs, to minimize effects of operating system activity, task switching, interrupt handling etc. </para></listitem>
+<listitem>
+<para>A single parse of the test file takes about 1/10th of a millisecond, so with large number of runs there is a good chance of hitting at least one no-interrupt streak, and obtaining undisturbed results. </para></listitem>
+</itemizedlist>
+<table rows="9" cols="7"><row>
+<entry thead="yes"><para><center>Platform</center> </para></entry><entry thead="yes"><para><center>Compiler</center> </para></entry><entry thead="yes"><para>strlen() </para></entry><entry thead="yes"><para>RapidXml </para></entry><entry thead="yes"><para>pugixml 0.3 </para></entry><entry thead="yes"><para>pugxml </para></entry><entry thead="yes"><para>TinyXml  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Pentium 4</center> </para></entry><entry thead="no"><para><center>MSVC 8.0</center> </para></entry><entry thead="no"><para><center>2.5</center> </para></entry><entry thead="no"><para><center>5.4</center> </para></entry><entry thead="no"><para><center>7.0</center> </para></entry><entry thead="no"><para><center>61.7</center> </para></entry><entry thead="no"><para><center>298.8</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Pentium 4</center> </para></entry><entry thead="no"><para><center>gcc 4.1.1</center> </para></entry><entry thead="no"><para><center>0.8</center> </para></entry><entry thead="no"><para><center>6.1</center> </para></entry><entry thead="no"><para><center>9.5</center> </para></entry><entry thead="no"><para><center>67.0</center> </para></entry><entry thead="no"><para><center>413.2</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Core 2</center> </para></entry><entry thead="no"><para><center>MSVC 8.0</center> </para></entry><entry thead="no"><para><center>1.0</center> </para></entry><entry thead="no"><para><center>4.5</center> </para></entry><entry thead="no"><para><center>5.0</center> </para></entry><entry thead="no"><para><center>24.6</center> </para></entry><entry thead="no"><para><center>154.8</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Core 2</center> </para></entry><entry thead="no"><para><center>gcc 4.1.1</center> </para></entry><entry thead="no"><para><center>0.6</center> </para></entry><entry thead="no"><para><center>4.6</center> </para></entry><entry thead="no"><para><center>5.4</center> </para></entry><entry thead="no"><para><center>28.3</center> </para></entry><entry thead="no"><para><center>229.3</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Athlon XP</center> </para></entry><entry thead="no"><para><center>MSVC 8.0</center> </para></entry><entry thead="no"><para><center>3.1</center> </para></entry><entry thead="no"><para><center>7.7</center> </para></entry><entry thead="no"><para><center>8.0</center> </para></entry><entry thead="no"><para><center>25.5</center> </para></entry><entry thead="no"><para><center>182.6</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Athlon XP</center> </para></entry><entry thead="no"><para><center>gcc 4.1.1</center> </para></entry><entry thead="no"><para><center>0.9</center> </para></entry><entry thead="no"><para><center>8.2</center> </para></entry><entry thead="no"><para><center>9.2</center> </para></entry><entry thead="no"><para><center>33.7</center> </para></entry><entry thead="no"><para><center>265.2</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Pentium 3</center> </para></entry><entry thead="no"><para><center>MSVC 8.0</center> </para></entry><entry thead="no"><para><center>2.0</center> </para></entry><entry thead="no"><para><center>6.3</center> </para></entry><entry thead="no"><para><center>7.0</center> </para></entry><entry thead="no"><para><center>30.9</center> </para></entry><entry thead="no"><para><center>211.9</center>  </para></entry></row>
+<row>
+<entry thead="no"><para><center>Pentium 3</center> </para></entry><entry thead="no"><para><center>gcc 4.1.1</center> </para></entry><entry thead="no"><para><center>1.0</center> </para></entry><entry thead="no"><para><center>6.7</center> </para></entry><entry thead="no"><para><center>8.9</center> </para></entry><entry thead="no"><para><center>35.3</center> </para></entry><entry thead="no"><para><center>316.0</center>  </para></entry></row>
+</table>
+<emphasis>(*) All results are in CPU cycles per character of source text</emphasis></para></sect2>
+</sect1>
+<sect1 id="namespacerapidxml_1reference">
+<title>Reference</title>
+<para>This section lists all classes, functions, constants etc. and describes them in detail. </para></sect1>
+    </detaileddescription>
+    <location file="d:/Sources/rapidxml/rapidxml.hpp" line="31"/>
+  </compounddef>
+</doxygen>

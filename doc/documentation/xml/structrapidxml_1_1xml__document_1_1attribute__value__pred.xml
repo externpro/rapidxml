@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.4.7">
+  <compounddef id="structrapidxml_1_1xml__document_1_1attribute__value__pred" kind="struct" prot="private">
+    <compoundname>rapidxml::xml_document::attribute_value_pred</compoundname>
+    <templateparamlist>
+      <param>
+        <type>Ch</type>
+        <declname>Quote</declname>
+        <defname>Quote</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structrapidxml_1_1xml__document_1_1attribute__value__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>static unsigned char test</definition>
+        <argsstring>(Ch ch)</argsstring>
+        <name>test</name>
+        <param>
+          <type>Ch</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="d:/Sources/rapidxml/rapidxml.hpp" line="1411" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="1410" bodyend="1416"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="d:/Sources/rapidxml/rapidxml.hpp" line="1409" bodyfile="d:/Sources/rapidxml/rapidxml.hpp" bodystart="1408" bodyend="1417"/>
+    <listofallmembers>
+      <member refid="structrapidxml_1_1xml__document_1_1attribute__value__pred_2734048dc2fddf8ffcad17b4492849d8_12734048dc2fddf8ffcad17b4492849d8" prot="public" virt="non-virtual"><scope>rapidxml::xml_document::attribute_value_pred</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
