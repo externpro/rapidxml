@@ -19,11 +19,7 @@ add_library(${lib_name} INTERFACE ${${lib_name}_libsrcs})
 target_include_directories(${lib_name} INTERFACE $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 ########################################
 set(targetsFile ${PROJECT_NAME}-targets)
-install(TARGETS ${lib_name} EXPORT ${targetsFile}
-  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
-  )
+install(TARGETS ${lib_name} EXPORT ${targetsFile})
 install(FILES ${root_srcs} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME})
 if(DEFINED XP_NAMESPACE)
   set(nameSpace NAMESPACE ${XP_NAMESPACE}::)
