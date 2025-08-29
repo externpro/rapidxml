@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.31)
 project(rapidxml)
 include(GNUInstallDirs)
-include(flags OPTIONAL)
+include(xpflags)
 set(lib_name ${PROJECT_NAME})
 ########################################
 set(root_srcs
