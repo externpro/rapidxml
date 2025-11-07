@@ -1,0 +1,30 @@
+name: Build
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+  workflow_dispatch:
+jobs:
+  linux:
+    uses: externpro/externpro/.github/workflows/build-linux.yml@25.06
+    with:
+      cmake-workflow-preset: LinuxRelease
+      runon: ubuntu-latest
+    secrets: inherit
+  linux-arm64:
+    uses: externpro/externpro/.github/workflows/build-linux.yml@25.06
+    with:
+      cmake-workflow-preset: LinuxRelease
+      runon: ubuntu-24.04-arm
+    secrets: inherit
+  macos:
+    uses: externpro/externpro/.github/workflows/build-macos.yml@25.06
+    with:
+      cmake-workflow-preset: DarwinRelease
+    secrets: inherit
+  windows:
+    uses: externpro/externpro/.github/workflows/build-windows.yml@25.06
+    with:
+      cmake-workflow-preset: WindowsRelease
+    secrets: inherit
