@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.31)
 set(CMAKE_PROJECT_TOP_LEVEL_INCLUDES .devcontainer/cmake/xproinc.cmake)
 project(rapidxml)
-include(GNUInstallDirs)
-include(xpflags)
 set(lib_name ${PROJECT_NAME})
 ########################################
 set(root_srcs
