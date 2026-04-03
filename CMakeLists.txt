@@ -24,7 +24,7 @@ if(DEFINED XP_NAMESPACE)
     BASE v1.13 XPDIFF "intro"
     WEB "http://rapidxml.sourceforge.net/"
     DESC "fast XML parser"
-    LICENSE "[BSL-1.0 or MIT](http://rapidxml.sourceforge.net/license.txt 'Boost Software License or MIT License')"
+    LICENSE "[BSL-1.0 OR MIT](http://rapidxml.sourceforge.net/license.txt 'Boost Software License or MIT License')"
     )
   set(nameSpace NAMESPACE ${XP_NAMESPACE}::)
 elseif(NOT DEFINED CMAKE_INSTALL_CMAKEDIR)
